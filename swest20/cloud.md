@@ -22,7 +22,7 @@ IoT デバイス向けのメッセージ処理基盤です。
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRRMKKl5SMjLhPip5UbneyF9nzrNgbhc_3q22peqWG7katUvSuQU2-Cn82EqAGCxip5q7DyiIHKOLZN/pub?w=881&amp;h=688">
 
-<h1 id="step4a">【作業】ステップ 4A: 送信先を変更し、クラウド上での条件付けを行う
+<h1 id="step4a">【作業】ステップ 4A: 送信先を変更し、クラウド上での条件付けを行う</h1>
 
 ## 最初に. ステップ 4 まで終了していることを確認する
 
