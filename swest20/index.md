@@ -717,6 +717,19 @@ Wio LTE を初期化しておくことで、次回起動時に不用意な通信
 
 ※ "モノ" や "ポリシー" の作成や設定は不要です
 
+```bash
+## 環境構築
+$ aws iam create-user --user-name awsiotcore-dataaccess-for-funnel-handson
+$ aws iam attach-user-policy --policy-arn arn:aws:iam::aws:policy/AWSIoTDataAccess --user-name awsiotcore-dataaccess-for-funnel-handson
+$ aws iam create-access-key --user-name awsiotcore-dataaccess-for-funnel-handson
+
+## 環境終了
+$ aws iam list-access-keys --user-name awsiotcore-dataaccess-for-funnel-handson
+$ aws iam delete-access-key --user-name awsiotcore-dataaccess-for-funnel-handson --access-key-id $OLD_ACCESS_KEY_ID
+$ aws iam detach-user-policy --policy-arn arn:aws:iam::aws:policy/AWSIoTDataAccess --user-name awsiotcore-dataaccess-for-funnel-handson
+$ aws iam delete-user --user-name awsiotcore-dataaccess-for-funnel-handson
+```
+
 # 運営の方へ
 
 これらを準備、運営側シートへ書き込んでください
